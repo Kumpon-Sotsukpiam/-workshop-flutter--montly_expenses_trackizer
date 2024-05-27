@@ -7,6 +7,7 @@ class PrimaryButton extends StatelessWidget {
   final VoidCallback onPressed;
   final double fontSize;
   final FontWeight fontWeight;
+
   const PrimaryButton(
       {super.key,
       required this.title,
@@ -27,7 +28,7 @@ class PrimaryButton extends StatelessWidget {
             borderRadius: BorderRadius.circular(30),
             boxShadow: [
               BoxShadow(
-                  color: TColor.secondary.withOpacity(0.35),
+                  color: TColor.secondary.withOpacity(0.25),
                   blurRadius: 10,
                   offset: const Offset(0, 5))
             ]),

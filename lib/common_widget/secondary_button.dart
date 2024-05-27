@@ -7,12 +7,13 @@ class SecondaryButton extends StatelessWidget {
   final VoidCallback onPressed;
   final double fontSize;
   final FontWeight fontWeight;
+
   const SecondaryButton(
       {super.key,
-        required this.title,
-        required this.onPressed,
-        this.fontSize = 14,
-        this.fontWeight = FontWeight.w600});
+      required this.title,
+      required this.onPressed,
+      this.fontSize = 14,
+      this.fontWeight = FontWeight.w600});
 
   @override
   Widget build(BuildContext context) {
@@ -24,8 +25,7 @@ class SecondaryButton extends StatelessWidget {
         decoration: BoxDecoration(
             image: const DecorationImage(
                 image: AssetImage("assets/img/secodry_btn.png")),
-            borderRadius: BorderRadius.circular(30)
-        ),
+            borderRadius: BorderRadius.circular(30)),
         child: Text(
           title,
           style: TextStyle(
